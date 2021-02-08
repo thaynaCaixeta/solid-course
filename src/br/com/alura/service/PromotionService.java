@@ -1,4 +1,4 @@
-package promotion;
+package br.com.alura.service;
 
 import br.com.alura.rh.ValidationException;
 import br.com.alura.rh.model.Employee;
