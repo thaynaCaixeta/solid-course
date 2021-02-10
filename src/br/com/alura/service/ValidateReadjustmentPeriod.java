@@ -13,9 +13,9 @@ public class ValidateReadjustmentPeriod implements ReadjustmentValidation{
 		LocalDate lastReadjustmentDate = employee.getLastReadjustmentDate();
 		LocalDate now = LocalDate.now();
 		int monthsBetweenLastReadjustment = Period.between(lastReadjustmentDate, now).getMonths();
+		
 		if (monthsBetweenLastReadjustment < 6) {
 			throw new ValidationException("Period between the last readjustment and today are smaller than six months");
 		}
 	}
-
 }

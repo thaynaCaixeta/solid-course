@@ -8,8 +8,7 @@ import br.com.alura.rh.model.Employee;
 public class SalaryReadjustmentService {
 	
 	private List<ReadjustmentValidation> validations;
-	
-	
+
 	
 	public SalaryReadjustmentService(List<ReadjustmentValidation> validations) {
 		this.validations = validations;
@@ -20,5 +19,4 @@ public class SalaryReadjustmentService {
 		BigDecimal newSalary = employee.getPersonalData().getSalary().add(increasedValue);
 		employee.adjustSalary(newSalary);
 	}
-
 }
